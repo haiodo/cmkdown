@@ -40,7 +40,7 @@ open class ImageProvider {
         self.scaleFactor = scaleFactor
     }
     
-    public func resolveImage( name: String ) -> CachedImage? {
+    open func resolveImage( name: String ) -> CachedImage? {
         // Not implemented by default
         return nil
     }
@@ -102,7 +102,7 @@ open class ImageProvider {
     }
 }
 
-func rescaleImage(_ image: NSImage, _ width: CGFloat, _ height: CGFloat) -> NSImage {
+public func rescaleImage(_ image: NSImage, _ width: CGFloat, _ height: CGFloat) -> NSImage {
     let newSize = CGSize(width: width, height: height)
     if let bitmapRep = NSBitmapImageRep(
         bitmapDataPlanes: nil, pixelsWide: Int(newSize.width), pixelsHigh: Int(newSize.height),
