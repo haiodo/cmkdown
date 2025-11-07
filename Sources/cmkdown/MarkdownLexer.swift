@@ -35,7 +35,7 @@ public class MarkdownLexer {
     
     public var errorHandler: ((_ error: LexerError, _ startPos:Int, _ pos: Int ) -> Void)?
     
-    init( _ code: String) {
+    public init( _ code: String) {
         self.code = code
         self.it = code.makeIterator()
         

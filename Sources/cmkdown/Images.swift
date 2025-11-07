@@ -23,7 +23,7 @@ public class CachedImage {
     var image: NSImage
     var size: CGSize
     
-    init( image: NSImage, size: CGSize) {
+    public init( image: NSImage, size: CGSize) {
         self.image = image
         self.size = size
     }
