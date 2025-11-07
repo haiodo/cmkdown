@@ -36,7 +36,7 @@ open class ImageProvider {
     let scaleFactor: CGFloat
     var images: [String:CachedImage] = [:]
     
-    init(_ scaleFactor: CGFloat ) {
+    public init(_ scaleFactor: CGFloat ) {
         self.scaleFactor = scaleFactor
     }
     
