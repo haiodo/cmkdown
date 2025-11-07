@@ -21,7 +21,7 @@ import Cocoa
 
 typealias attrType = NSAttributedString.Key
 
-class MarkDownAttributedPrinter {
+public class MarkDownAttributedPrinter {
     fileprivate static func calcTitleFontSize(_ text: String, fontSize: CGFloat) -> (String, CGFloat, Int) {
         var hlevel = 0
         var calch = true

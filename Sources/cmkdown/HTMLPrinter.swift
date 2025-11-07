@@ -20,7 +20,7 @@ import Foundation
 
 typealias htmlAttrType = String
 
-class HTMLPrinter {
+public class HTMLPrinter {
     private static func calcTitleFontSize(_ text: String, fontSize: CGFloat) -> (String, CGFloat, Int) {
         var hlevel = 0
         var calch = true

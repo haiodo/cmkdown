@@ -520,7 +520,7 @@ public func parseColor(_ color: String, alpha: CGFloat = 1.0  ) -> CGColor {
     return CGColor.black.copy(alpha: alpha)!
 }
 
-func colorToHex(_ color: CGColor) -> String {
+public func colorToHex(_ color: CGColor) -> String {
     let components = color.components
     let r: CGFloat = components?[0] ?? 0.0
     let g: CGFloat = components?[1] ?? 0.0
